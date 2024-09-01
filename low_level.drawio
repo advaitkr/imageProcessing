@@ -1,0 +1,75 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" version="24.7.8">
+  <diagram name="Page-1" id="Mw_0n_GLEhaEAqpxTEeZ">
+    <mxGraphModel dx="2923" dy="803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8v-Z0Y0sDxo2iosiFpuR-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="240" as="sourcePoint" />
+            <mxPoint x="370" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8v-Z0Y0sDxo2iosiFpuR-5" value="Incoming Request (upload CSV)&amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-170" y="90" width="330" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="8v-Z0Y0sDxo2iosiFpuR-6" value="" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1470" y="610" width="60" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8v-Z0Y0sDxo2iosiFpuR-9" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=south;notch=0;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="190" width="70" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8v-Z0Y0sDxo2iosiFpuR-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8v-Z0Y0sDxo2iosiFpuR-51" target="8v-Z0Y0sDxo2iosiFpuR-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8v-Z0Y0sDxo2iosiFpuR-51" value="Controller: imageController.js&lt;br&gt;uploadCSV(req, res)&lt;br&gt;Parses CSV &lt;span class=&quot;hljs-keyword&quot;&gt;using&lt;/span&gt; parseCSV &lt;span class=&quot;hljs-keyword&quot;&gt;function&lt;/span&gt;&amp;nbsp;&lt;br&gt;Passes parsed data &lt;span class=&quot;hljs-keyword&quot;&gt;to&lt;/span&gt; processImages&lt;br&gt;Passes parsed data &lt;span class=&quot;hljs-keyword&quot;&gt;to&lt;/span&gt; processImages&amp;nbsp;" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-120" y="300" width="260" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="8v-Z0Y0sDxo2iosiFpuR-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8v-Z0Y0sDxo2iosiFpuR-58" target="8v-Z0Y0sDxo2iosiFpuR-61">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="10" y="830" />
+              <mxPoint x="10" y="830" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8v-Z0Y0sDxo2iosiFpuR-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8v-Z0Y0sDxo2iosiFpuR-58" target="8v-Z0Y0sDxo2iosiFpuR-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8v-Z0Y0sDxo2iosiFpuR-58" value="Service: imageService.js&amp;nbsp;&amp;nbsp;&lt;br&gt;processImages(data)&amp;nbsp;&lt;br&gt;Loops through &lt;span class=&quot;hljs-keyword&quot;&gt;each&lt;/span&gt; image URL&lt;br&gt;Calls downloadImage &lt;span class=&quot;hljs-keyword&quot;&gt;to&lt;/span&gt; download the image&lt;br&gt;Reduces image quality &lt;span class=&quot;hljs-keyword&quot;&gt;by&lt;/span&gt; &lt;span class=&quot;hljs-number&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;hljs-operator&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;using&lt;/span&gt; sharp&lt;br&gt;Saves the processed images&lt;br&gt;Calls saveOutputDataToCSV &lt;span class=&quot;hljs-keyword&quot;&gt;to&lt;/span&gt; save the CSV" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-75" y="650" width="170" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="8v-Z0Y0sDxo2iosiFpuR-60" value="" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="550" width="60" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8v-Z0Y0sDxo2iosiFpuR-61" value="Utility: csvUtils.js&lt;br&gt;parseCSV(filePath)&lt;br&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;Reads&lt;/span&gt; CSV &lt;span class=&quot;hljs-keyword&quot;&gt;using&lt;/span&gt; fastcsv&lt;br&gt;Validates required columns&lt;br&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;Returns&lt;/span&gt; parsed &lt;span class=&quot;hljs-keyword&quot;&gt;rows&lt;/span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-75" y="880" width="170" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="8v-Z0Y0sDxo2iosiFpuR-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="8v-Z0Y0sDxo2iosiFpuR-63">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="10" y="1080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="Utility: imageUtils.js&lt;br/&gt;&lt;br&gt;downloadImage(url, path)&lt;br&gt;Downloads images &lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt; URLs&lt;br&gt;Uses fs &lt;span class=&quot;hljs-keyword&quot;&gt;and&lt;/span&gt; axios &lt;span class=&quot;hljs-keyword&quot;&gt;to&lt;/span&gt; write&lt;br&gt;downloaded image &lt;span class=&quot;hljs-keyword&quot;&gt;to&lt;/span&gt; disk" link="Utility: imageUtils.js" id="8v-Z0Y0sDxo2iosiFpuR-63">
+          <mxCell style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+            <mxGeometry x="-340" y="870" width="170" height="170" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="8v-Z0Y0sDxo2iosiFpuR-67" value="Utility: outputUtils.js&lt;br&gt;saveOutputDataToCSV(data)&lt;br&gt;Receives data &lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt; processImages&amp;nbsp;&lt;br&gt;Formats data &lt;span class=&quot;hljs-keyword&quot;&gt;into&lt;/span&gt; CSV &lt;span class=&quot;hljs-keyword&quot;&gt;using&lt;/span&gt;&amp;nbsp;&lt;br&gt;createObjectCsvWriter &lt;br&gt;Writes CSV file &lt;span class=&quot;hljs-keyword&quot;&gt;to&lt;/span&gt; the output directory&amp;nbsp;&amp;nbsp;" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="1140" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="8v-Z0Y0sDxo2iosiFpuR-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.694;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="8v-Z0Y0sDxo2iosiFpuR-61" target="8v-Z0Y0sDxo2iosiFpuR-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Output: output_images.csv&lt;br&gt;CSV file with processed data&amp;nbsp;&amp;nbsp;" link="Output: output_images.csv " id="8v-Z0Y0sDxo2iosiFpuR-86">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="-120" y="1330" width="300" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="8v-Z0Y0sDxo2iosiFpuR-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.333;entryY=-0.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="8v-Z0Y0sDxo2iosiFpuR-67" target="8v-Z0Y0sDxo2iosiFpuR-86">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
