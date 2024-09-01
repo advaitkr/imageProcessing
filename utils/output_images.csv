@@ -1,0 +1,3 @@
+Serial Number,Product Name,Input Image URLs,Output Image URLs
+1,SKU1,"https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg,https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg,https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg","processed_images/sample.jpg,processed_images/sample.jpg,processed_images/sample.jpg"
+2,SKU2,"https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg,https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg,https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg","processed_images/sample.jpg,processed_images/sample.jpg,processed_images/sample.jpg"

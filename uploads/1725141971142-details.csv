@@ -1,0 +1,3 @@
+serialNumber,productName,inputImageUrls
+1,SKU1,"https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg,https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg,https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg"
+2,SKU2,"https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg,https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg,https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg"
